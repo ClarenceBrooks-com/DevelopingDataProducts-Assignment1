@@ -1,0 +1,26 @@
+---
+title: "February2-2021"
+author: "Clarence Brooks"
+date: "2/2/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Date Created: February 2, 2021
+
+## Indianapolis (Indy), Indiana, USA
+
+## Zoom in to see why Indy is called "Circle City".
+
+```{r, echo=FALSE}
+library(leaflet)
+my_map <- leaflet() %>% addTiles()
+##my_map
+my_map <- my_map %>% addMarkers(lat=39.76838, lng=-86.15804, popup="Indianapolis")
+my_map
+
+```
+
